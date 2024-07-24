@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>CSS Properties</title>
   <style>
+    html {
+      font-size: 30px;
+    }
     body {
       background-color: cornflowerblue;
       color: white;
@@ -13,17 +16,42 @@
 
     /* Don't change the CSS above, add Your CSS below */
 
-    
+    #color {
+      color: coral;  
+    }
+
+    #size {
+      font-size: 2rem;
+    }
+
+    #weight {
+      font-weight: 900;
+    }
+
+    #family {
+      font-family: "Caveat", cursive;
+    }
+
+    #align {
+      text-align: right;
+    }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <!-- 구글 글씨 복붙시, 스타일 밖에 위치 선정하기 ! -->
 </head>
 
 <body>
   <h1>Important CSS Properties</h1>
-  <p>Color</p>
-  <p>Font Size</p>
-  <p>Font Weight</p>
-  <p>Font Family</p>
-  <p>Text Align</p>
+  <p id="color">Color</p>
+  <p id="size">Font Size</p>
+  <p id="weight">Font Weight</p>
+  <p id="family">Font Family</p>
+  <p id="align">Text Align</p>
+
+  <!-- css 특성을 적용할때, 선택기를 class, id, 속성 중 어느것을 써야할 지 몰랐고 실제로 CSS 다 적었는데 적용이 안됨
+  해결:id 값을 내가 직접 적어서 해당 id 값으로 CSS 특성을 적용하면 되는 것이었음 (선택기 중 Id 선택기 적용!!!!) -->
 
   <!-- TODOs
   1. Change the color of <p>Color</p> to "coral" color.
