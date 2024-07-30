@@ -1,0 +1,47 @@
+/* Don't change the existing CSS. */
+/* 
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+.white-text{
+  color: white; 
+  background-color: red;
+  padding: 10px;
+}
+#outer-box{
+  padding: 10px; 
+  border: 10px solid purple; 
+} */
+/* 1.첫째 안쪽 상자나 바깥쪽 상자엔 안쪽 여백을 추가할 필요가 없음-새 div 가 모두 박스라는 클래스 공유하고 10픽셀 여백 이미 적용
+2.id 선택기가 클래스 선택기보다 더 구체적임!- div 3개 모두 배경색 파란색인데 outer box가 재정의
+3.동일 선상의 우선순위면 순서가 중요 */
+/* 안젤라 */
+#outer-box {
+  background-color: purple;
+}
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box {
+  background-color: red;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text {
+  color: white;
+}

@@ -1,0 +1,33 @@
+/* Write your code here: */
+h1, h2{
+    color: blueviolet; 
+}
+/* 쉼표 하나로 두개의 분리된 선택기 선택가능 */
+/* .box > .done {
+    color: firebrick; 
+} */
+
+.box > p {
+    color: firebrick;
+}
+/* 부모 box 안에 있는 p 단락태그 사용! */
+
+/* ul li {
+    color: blue; 
+} */
+
+.box li {
+    color: blue; 
+}
+
+li.done{
+    color: seagreen;
+}
+/* 공간없이 두 항목 연결하기 */
+
+/* h1 ul.done{
+    font: size 0.5rem;
+} */
+ul p.done{
+    font-size: 0.5rem;
+}
