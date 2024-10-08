@@ -16,6 +16,8 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
         var buttonInnerHTML = this.innerHTML // 이벤트를 촉발할 버튼
 
         makeSound(buttonInnerHTML);
+
+        buttonAnimation(buttonInnerHTML);
     });
 
 }
@@ -23,6 +25,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 // 키보드 누른 곳을 찾음
 document.addEventListener("keydown", function (event) {
     makeSound(event.key);
+    buttonAnimation(event.key);
 }); 
 // 웹페이지 전체에 이벤트 리스너 추가(키보드)
 
@@ -72,4 +75,8 @@ function makeSound(key) {
 
 }
 
+function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey); 
+    activeButton.classList.add("pressed"); 
+}
 
