@@ -10,7 +10,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
         // 반복문 돌면서 0에서 시작해 이벤트 리스너를 추가 
         // 버튼의 이벤트 리스너가 그 이벤트 리스너에 연결된 기능을 발생시킴
         
-        this.style.color = "white"; 
+        // this.style.color = "white"; 
         // console.log(this.style.color = "white");
         // 이미지의 텍스트 흰색으로 바꿈
         var buttonInnerHTML = this.innerHTML // 이벤트를 촉발할 버튼
@@ -78,5 +78,9 @@ function makeSound(key) {
 function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("." + currentKey); 
     activeButton.classList.add("pressed"); 
+
+    setTimeout(function () {
+        activeButton.classList.remove("pressed");
+    }, 100);
 }
 
