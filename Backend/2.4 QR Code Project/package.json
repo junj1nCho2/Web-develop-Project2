@@ -1,5 +1,8 @@
 {
+<<<<<<< HEAD
   "type": "module",
+=======
+>>>>>>> 138af41220b73236d6731bed310ce71469bc2203
   "dependencies": {
     "fs": "^0.0.1-security",
     "inquirer": "^9.2.16",
@@ -13,7 +16,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "author": "junjin",
+=======
+  "author": "",
+>>>>>>> 138af41220b73236d6731bed310ce71469bc2203
   "license": "ISC",
   "description": ""
 }

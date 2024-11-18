@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import inquirer from "inquirer";
 import qr from "qr-image";
 import fs from "fs"
@@ -27,6 +28,8 @@ inquirer
             // Something else went wrong
         }
     });
+=======
+>>>>>>> 138af41220b73236d6731bed310ce71469bc2203
 /* 
 1. Use the inquirer npm package to get user input.
 2. Use the qr-image npm package to turn the user entered URL into a QR code image.
