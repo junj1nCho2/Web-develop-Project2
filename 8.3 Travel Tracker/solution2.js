@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
 
 //INSERT new country
 app.post("/add", async (req, res) => {
-  const input = req.body["country"];
+  const input = req.body["country"];  //name = "country"; 
 
   const result = await db.query(
     "SELECT country_code FROM countries WHERE country_name = $1",

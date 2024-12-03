@@ -69,6 +69,6 @@ app.post("/add", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.list(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
