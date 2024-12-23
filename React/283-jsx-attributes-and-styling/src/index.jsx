@@ -14,7 +14,6 @@ root.render(
   <div>
     <h1 className="heading" contentEditable="true" spellCheck="false">My Favourite Foods</h1>
     <img src={img + "?grayscale"} />
-    //grayscale: 흑백 
 
     <img
       className="food-img"
